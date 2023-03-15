@@ -4,6 +4,12 @@ import { useState } from 'react';
 import {addContact} from '../../redux/contacts/operations'
 import { nanoid } from 'nanoid'
 import styles from './Phonebook.module.css'
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import { notification } from '../Notification/Notification'
+import { NotificationContainer } from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
+
 export function ContactForm (){
   const contacts = useSelector(state => state.contacts.items);
    const [name, setName] = useState('');
@@ -32,11 +38,13 @@ export function ContactForm (){
       contact.name.toLowerCase() === name.toLowerCase()
     
     )) {
-      return alert(`${name} is already in contacts.`)
+      notification('warning')()
+      return
     }
     
     dispatch(addContact( {name, number} ))
     reset()
+    notification('success')()
   }
   
 
@@ -46,39 +54,38 @@ export function ContactForm (){
   }
     
         return (
-        <form onSubmit={hendleSubmit} className={styles.form}>
-        <label className={styles.form_label}>
-          Name
-          <br/><input
-  type="text"
-        name="name"
-        value={name}
-                        onChange={hendleChange}
-                        className={styles.form_input}
-                        
-        id={
+          <form onSubmit={hendleSubmit} className={styles.form}>
+            <TextField
+          id={
           nanoid()
         }
+          label="Name"
+          variant="outlined"
+          type="text"
+              name="name"
+              value={name}
+              onChange={hendleChange}
   pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
   title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-  required
-/>
-          </label><br/>
-          <label className={styles.form_label}>
-            Number
-            <br/><input
-  type="tel"
+              required
+            />
+                        <TextField
+
+          label="Number"
+          variant="outlined"
+          type="number"
               name="number"
               value={number}
-                        onChange={hendleChange}
-                        className={styles.form_input}
-  pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+              onChange={hendleChange}
+  pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}[0-9]*"
   title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-  required
-/>
-          </label><br/>
-        <button type='submit' className={styles.form_btn}>Add contact</button>
-        </form>
+              required
+        />
+        <Button variant="contained" size="large" type="submit">
+          Add contact
+            </Button>
+<NotificationContainer className={styles.notification_container}/>
+          </form>
 
     )
 }

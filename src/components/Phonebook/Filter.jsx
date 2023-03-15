@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import{setStatusFilter } from '../../redux/contacts/filtersSlice'
 import PropTypes from 'prop-types';
+import TextField from '@mui/material/TextField';
 import styles from './Phonebook.module.css'
 
 export function Filter(){
@@ -14,14 +15,18 @@ export function Filter(){
        dispatch(setStatusFilter(value))
         
     }
-        return (
-            <label className={styles.find_label}>
-          Find contacts by name
-            <br/><input type="text" name="filter"
-                value={filters}
+  return (
+    <div className={styles.filter}>
+      <TextField
+          id="outlined-basic"
+          label="Find contacts by name"
+          variant="outlined"
+          type="text"
+          name="filter"
+          value={filters}
                     onChange={hendleFilter}
-                className={styles.find_input}/>
-        </label>
+        />
+    </div>
         )
 }
 

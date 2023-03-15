@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteContact } from '../../redux/contacts/operations'
 import { nanoid } from 'nanoid'
 import styles from './Phonebook.module.css'
+import Button from '@mui/material/Button';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 export const ContactList = () => {
 
@@ -23,12 +25,14 @@ export const ContactList = () => {
     
     const contactsData = hendleFind()
 return (
-            <ul>
+            <ul className={styles.list}>
         {contactsData.map(({ name, number, id }, index) =>           
             <li key={nanoid()} className={styles.item}>
-                        <span>{name}: {number}</span>
-                        <button type='button' className = {styles.item_btn} onClick={()=>onDelete(id)} key = {index}>Delete</button>
-                    </li>
+                        <span className={styles.item_span}>{name}: {number}</span>
+                  <Button variant="outlined" startIcon={<DeleteIcon />} size="small" type="button" onClick={()=>onDelete(id)} key = {index}>
+          Delete
+        </Button>          
+          </li>
                 )}
              </ul>
          )
