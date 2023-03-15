@@ -12,6 +12,9 @@ export function notification(type) {
       case 'error':
         NotificationManager.error('Oops..');
         break;
+      default:
+        NotificationManager.info('More information');
+        break;
     }
   };
 }
