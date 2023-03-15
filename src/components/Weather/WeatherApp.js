@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import axios from 'axios';
 import { ReactComponent as Forecast } from '../../images/forecast.svg';
 import styles from './WeatherApp.module.css';
 
@@ -49,23 +48,15 @@ function Weather() {
     if (event.key === 'Enter') {
       event.preventDefault();
       setQuery('');
-      setWeather({ ...weather });
-      const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
-      const apiKey = 'f00c38e0279b7bc85480c3fe775d518c';
-
-      await axios
-        .get(baseUrl, {
-          params: {
-            q: query,
-            units: 'metric',
-            appid: apiKey,
-          },
-        })
-        .then(res => {
-          setWeather({ data: res.data, error: false });
+      await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=f00c38e0279b7bc85480c3fe775d518c`
+      )
+        .then(resp => resp.json())
+        .then(data => {
+          setWeather({ data: data, error: false });
         })
         .catch(error => {
-          setWeather({ ...weather, data: {}, error: true });
+          setWeather({ data: {}, error: true });
           setQuery('');
           console.log(error.message);
         });
