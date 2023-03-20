@@ -1,10 +1,14 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: white;
   padding: 10px;
   border-bottom: 1px solid #ababab;
-  padding-left: 170px;
-  padding-right: 170px;
 }
+
+/* @media screen and (max-width: 768px) {
+  .register_title {
+    font-size: 32px;
+  }
+} */
