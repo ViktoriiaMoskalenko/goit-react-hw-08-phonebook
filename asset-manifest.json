@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-08-phonebook/static/css/main.b97a3e83.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.dd599c8c.js",
-    "static/css/406.9fe87eb4.chunk.css": "/goit-react-hw-08-phonebook/static/css/406.9fe87eb4.chunk.css",
+    "main.css": "/goit-react-hw-08-phonebook/static/css/main.0bfd2bce.css",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.1436a87b.js",
+    "static/css/406.a3934eaa.chunk.css": "/goit-react-hw-08-phonebook/static/css/406.a3934eaa.chunk.css",
     "static/js/406.f845a1d1.chunk.js": "/goit-react-hw-08-phonebook/static/js/406.f845a1d1.chunk.js",
-    "static/css/40.136f5f87.chunk.css": "/goit-react-hw-08-phonebook/static/css/40.136f5f87.chunk.css",
+    "static/css/40.2a7cf8a6.chunk.css": "/goit-react-hw-08-phonebook/static/css/40.2a7cf8a6.chunk.css",
     "static/js/40.de794d3a.chunk.js": "/goit-react-hw-08-phonebook/static/js/40.de794d3a.chunk.js",
-    "static/css/635.48e9a757.chunk.css": "/goit-react-hw-08-phonebook/static/css/635.48e9a757.chunk.css",
+    "static/css/635.59ff7a91.chunk.css": "/goit-react-hw-08-phonebook/static/css/635.59ff7a91.chunk.css",
     "static/js/635.26d1ce21.chunk.js": "/goit-react-hw-08-phonebook/static/js/635.26d1ce21.chunk.js",
-    "static/css/217.dd7586e5.chunk.css": "/goit-react-hw-08-phonebook/static/css/217.dd7586e5.chunk.css",
+    "static/css/217.13b22d63.chunk.css": "/goit-react-hw-08-phonebook/static/css/217.13b22d63.chunk.css",
     "static/js/217.7235b742.chunk.js": "/goit-react-hw-08-phonebook/static/js/217.7235b742.chunk.js",
     "static/js/60.78a0dc52.chunk.js": "/goit-react-hw-08-phonebook/static/js/60.78a0dc52.chunk.js",
     "static/js/170.bc23f1bb.chunk.js": "/goit-react-hw-08-phonebook/static/js/170.bc23f1bb.chunk.js",
@@ -20,21 +20,21 @@
     "static/media/notification.woff?s3g3t9": "/goit-react-hw-08-phonebook/static/media/notification.c392cd33d9d9de730f9d.woff",
     "static/media/notification.ttf?s3g3t9": "/goit-react-hw-08-phonebook/static/media/notification.c5d9251ea82e42f75381.ttf",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "main.b97a3e83.css.map": "/goit-react-hw-08-phonebook/static/css/main.b97a3e83.css.map",
-    "main.dd599c8c.js.map": "/goit-react-hw-08-phonebook/static/js/main.dd599c8c.js.map",
-    "406.9fe87eb4.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/406.9fe87eb4.chunk.css.map",
+    "main.0bfd2bce.css.map": "/goit-react-hw-08-phonebook/static/css/main.0bfd2bce.css.map",
+    "main.1436a87b.js.map": "/goit-react-hw-08-phonebook/static/js/main.1436a87b.js.map",
+    "406.a3934eaa.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/406.a3934eaa.chunk.css.map",
     "406.f845a1d1.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/406.f845a1d1.chunk.js.map",
-    "40.136f5f87.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/40.136f5f87.chunk.css.map",
+    "40.2a7cf8a6.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/40.2a7cf8a6.chunk.css.map",
     "40.de794d3a.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/40.de794d3a.chunk.js.map",
-    "635.48e9a757.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/635.48e9a757.chunk.css.map",
+    "635.59ff7a91.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/635.59ff7a91.chunk.css.map",
     "635.26d1ce21.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/635.26d1ce21.chunk.js.map",
-    "217.dd7586e5.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/217.dd7586e5.chunk.css.map",
+    "217.13b22d63.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/217.13b22d63.chunk.css.map",
     "217.7235b742.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/217.7235b742.chunk.js.map",
     "60.78a0dc52.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/60.78a0dc52.chunk.js.map",
     "170.bc23f1bb.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/170.bc23f1bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b97a3e83.css",
-    "static/js/main.dd599c8c.js"
+    "static/css/main.0bfd2bce.css",
+    "static/js/main.1436a87b.js"
   ]
 }
